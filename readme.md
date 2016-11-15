@@ -85,6 +85,6 @@ dovrai scrivere una funzione in grado di generare un array di azioni ("aggiungi"
 ```
 
 ## Regole
-- Utilizza il linguaggio richiesto nella job opening (*esempio: Java per Android Engineer, Python per Backend Engineer*).
+- Utilizza il linguaggio richiesto nella job opening (*esempio: Swift o Objective C per iOS Engineer, Python per Backend Engineer*).
 - Scrivi sia il codice che i test.
 - Se hai delle note sull'esercizio stesso, non esitare a scriverle.

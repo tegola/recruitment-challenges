@@ -27,6 +27,7 @@ A titolo di esempio, segue la struttura di un possibile taglio di monete.
 dovrai scrivere una funzione in grado di generare un array di azioni ("aggiungi", "rimuovi") che verranno processate per aggiornare la vista.
 
 A titolo di esempio, segue un possibile caso di test.
+
 **Da 0 a 27.5**
 ```json
 {

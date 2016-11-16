@@ -7,6 +7,8 @@ Conio rappresenta in modo fisico il portafoglio bitcoin, simulando un "salvadana
 ![Wallet update](sample.png "Wallet update")
 
 A disposizione, per partire, hai un json che definisce il taglio delle monete che andranno usate e il valore dei portafogli che devi generare.
+
+A titolo di esempio, segue la struttura di un possibile taglio di monete.
 ```json
 {
 	"coinsValue": [
@@ -24,6 +26,7 @@ A disposizione, per partire, hai un json che definisce il taglio delle monete ch
 
 dovrai scrivere una funzione in grado di generare un array di azioni ("aggiungi", "rimuovi") che verranno processate per aggiornare la vista.
 
+A titolo di esempio, segue un possibile caso di test.
 **Da 0 a 27.5**
 ```json
 {
@@ -85,6 +88,15 @@ dovrai scrivere una funzione in grado di generare un array di azioni ("aggiungi"
 ```
 
 ## Regole
+- Scrivi una funzione che, data una struttura di monete ed due valori di portafoglio, generi l'insieme delle azioni per l'aggiornamento della vista portafogli.
 - Utilizza il linguaggio richiesto nella job opening (*esempio: Swift o Objective C per iOS Engineer, Python per Backend Engineer*).
 - Scrivi sia il codice che i test.
 - Se hai delle note sull'esercizio stesso, non esitare a scriverle.
+
+## Criteri di valutazione
+Il risultato dell'esercizio verrà valutato sulla base dei seguenti criteri:
+- Correttezza formale
+- Valutazione dei corner cases
+- Leggibilità, modularità e manutenibilità del codice
+- Ordine di complessità
+

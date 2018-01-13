@@ -1,1 +1,127 @@
-/* Your CSS styles */
+/**
+ * I've chosen not to use any preprocessor, for simplicity purposes.
+ *
+ * Some personal little touches:
+ * - No external resources except the css file. Even SVGs are inlined.
+ * - The logo weight is now smaller by 80%.
+ * - The blockchain id text would have forced the browser to show the
+ *   scrollbars, so I forced it to wrap.
+ * - The Bitcoin icons are aligned to their text siblings and their size match
+ *   with the text
+ * - The (?) icon is aligned to its text siblings.
+ */
+
+/* Scaffolding */
+body {
+	background-color: #fff;
+	margin: 0;
+	font: 15px/1.35 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Hero */
+.hero {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #6bce85;
+	color: #fff;
+}
+.hero__logo {
+	width: 46px;
+	height: 60px;
+}
+.hero__heading {
+	font-size: 30px;
+	margin-top: 0.25em;
+	margin-bottom: 0.5em;
+}
+.hero__text {
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Summary */
+.summary {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.summary + .summary {
+	border-top: 2px solid #f0f0f0;
+}
+.summary__heading {
+	color: #b3b3b3;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+.summary__text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.summary__table {
+	width: 100%;
+	border: 0;
+}
+.summary__table td {
+	padding-left: 0;
+	padding-right: 0;
+}
+.summary__help {
+	display: inline-block;
+	vertical-align: 0.075rem;
+	background-color: #6bce85;
+	color: #fff;
+	width: 1rem;
+	height: 1rem;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: help;
+}
+
+/* Icons */
+.icon {
+	display: inline-block;
+	vertical-align: -0.1em;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* Responsive support */
+@media (min-width: 640px) {
+	.container {
+		max-width: 500px;
+	}
+	.hero__heading {
+		font-size: 40px;
+	}
+	.summary__heading {
+		float: left;
+		margin-top: 0.4em;
+	}
+	.summary__text {
+		text-align: right;
+	}
+}
+
+/* Utilities */
+.text--nowrap {
+	white-space: nowrap;
+}
+.text--forcewrap {
+	word-break: break-word;
+}
+.text--right {
+	text-align: right;
+}
+.text--highlight {
+	color: #fee94e;
+}
